@@ -1,6 +1,6 @@
 # Project Name
 
-## Tweet Emotion Imputation and Prediction
+## Tweet Emotion and and what product/company it is directed at
 
 ### Overview
 
