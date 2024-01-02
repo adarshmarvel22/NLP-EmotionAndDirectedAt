@@ -46,6 +46,13 @@ To address computational constraints during model training, data preprocessing t
 - **NER Model:**
   - Uses Seqeval as a metric for named entity recognition, evaluating the model's ability to label sequences. Seqeval is well-suited for NLP tasks like NER.
 
+- Write about the requirements and ways to deploy the model to prod. Also explain about different types of metrics someone should monitor after deployment.
+1. Select a deployment platform based on scalability and resource requirements, such as cloud services (e.g., AWS, Azure, GCP), on-premises servers, or container orchestration platforms. Basically AWS Sagemaer and ml.p2.xlarge for the resource requirements, since it requires high computational resources.
+2. Save the fine-tuned model in a format suitable for deployment, such as ONNX, TensorFlow SavedModel, or PyTorch JIT format.
+3. Implement logging mechanisms to capture model inputs, outputs, and errors. Establish monitoring for real-time tracking of model performance, resource utilization, and potential issues.
+4. Monitor key performance metrics such as response time, throughput, and resource utilization. Track these metrics to ensure the model operates within acceptable performance thresholds.
+5. Regularly assess the model for drift by comparing the production data distribution with the training data distribution. We need to implement strategies to retrain or update the model when significant drift is detected.
+
 ### Conclusion
 
 The project successfully imputes missing values in the dataset, predicts emotions and brands/products mentioned in tweets, and achieves reliable model performance on various metrics. The combination of fine-tuned transformer models and data augmentation techniques contributes to the overall effectiveness of the solution. The project addresses both missing data challenges and enhances the dataset for downstream analysis and applications.
