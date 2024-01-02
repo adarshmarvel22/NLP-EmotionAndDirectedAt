@@ -8,7 +8,7 @@ This project aims to address missing values in the columns "emotion_in_tweet_is_
 
 ### Models Selection
 
-The choice of models is based on the popularity and performance of pre-trained transformer models available in the Hugging Face model library. Specifically, "bert-base-uncased" is used for emotion classification, and "dslim/bert-base-NER" is used for NER tasks. These models have been fine-tuned to better suit the dataset and the objectives of the project.
+The choice of models is based on the popularity and performance of pre-trained transformer models available in the Hugging Face model library. Specifically, "bert-base-uncased" is used for emotion classification, and "dslim/bert-base-NER" is used for NER tasks. These models have been fine-tuned to better suit the dataset and the objectives of the project. Evaluated different vectorization techniques like Bag of Words, TF-IDF, Word2Vec and used embedding-based imputation( Utilizing pre-trained language models (e.g., BERT, GPT) to generate contextually relevant imputations for missing values.
 
 ### Data Augmentation Techniques
 
