@@ -1,1 +1,1 @@
-
+Due to size of model, it doesn't get uploaded on the github. Run the colab notebook in the root directory. it will generate the two models, one for emotion(positive, negative and neutral) and emotion_predicted_at, use it in the flask app directory or your personal project according to needs.
